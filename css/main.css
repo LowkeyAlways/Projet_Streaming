@@ -1,0 +1,159 @@
+/* Reset */
+html{ 
+    font-size: 62.5%;  
+}
+body{
+    font: 1.6rem sans-serif; 
+    margin: 0;  
+}
+h1,h2,h3,h4,p,ol,ul,figure,dd{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+
+:root{
+    --color-theme-main: #3B5998;
+    --color-theme-secondary: #8B9DC3;
+    --color-theme-last: #DFE3EE;
+    --color-theme-default: #dfe6e9;
+    --color-theme-warning: rgba(218, 13, 13, 0.4);
+}
+
+main{
+    margin: 0 15%;
+}
+
+section{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+header{
+    display: block;
+}
+
+
+header h1{
+    text-align: center;
+    position: relative;
+    padding-top: 2.5rem;
+}
+
+
+header img{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+main ul{
+    display: grid;
+    margin-bottom: 1.0rem;
+    margin-top: 5.0rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4;
+    text-align: center;
+}
+
+section p{
+    text-align: center;
+    margin-top: 10.0rem;
+    margin: 5% 20%;
+
+
+}
+
+section img{
+    height: 100px;
+    width: 100px;
+}
+
+section a{
+    padding: 2.0rem;
+    background-color: rgb(0, 174, 255);
+}
+
+footer h2{
+    text-align: center;
+}
+
+
+
+.image-box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 7rem;
+    padding: 1rem 80px;
+}
+
+fieldset legend{
+    font-size: 2rem;
+    padding: 1rem;
+}
+fieldset{
+    padding: 1rem;
+    border: solid .1rem var(--color-theme-main);
+    border-radius: .4rem;
+}
+fieldset form *{
+    display: block;
+    width: 100%;
+    line-height: 3.5rem;
+    border: solid .1rem #ccc;
+    margin-bottom: .5rem;
+}
+fieldset form label, fieldset small{
+    border: 0;
+}
+fieldset small{
+    font-style: italic;
+    color: var(--color-theme-main);
+}
+fieldset form input[placeholder]{
+    font-style: italic;
+    transition-duration: 0.5s;
+       
+}
+/* bordure en style */
+fieldset form input{
+    border: 0;
+    border: solid .1rem transparent;
+    border-bottom-color: rgb(180, 178, 178);
+    width: 25%;
+    opacity: 0.8;
+    transition-duration: 0.5s; 
+}
+/* focus animé */
+fieldset form input:focus{
+    border-bottom-color: rgb(119, 117, 117);
+    width: 100%;
+    opacity: 1;
+}
+fieldset form input[placeholder]:focus,
+fieldset form input[type="date"]:focus{
+    outline: 0;
+    box-shadow: 0 0 1rem var(--color-theme-warning);
+    background-color: var(--color-theme-default);   
+}
+fieldset form input[type="submit"]{
+    background-color: var(--color-theme-main);
+    color: #DFE3EE;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .01rem;
+    cursor: pointer;
+    margin: 0;
+    font-size: initial;
+    border: 0;
+    width: 100%;
+    opacity: 1;
+}
+fieldset form input{
+    padding: .5rem;
+}
