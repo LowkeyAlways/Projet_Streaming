@@ -16,18 +16,20 @@ h1,h2,h3,h4{
 }
 
 :root{
-    --color-theme-main: #3B5998;
+    --color-theme-main: #91a4ce;
     --color-theme-secondary: #8B9DC3;
     --color-theme-last: #DFE3EE;
-    --color-theme-default: #dfe6e9;
-}
-
-body{
-    background-color: #141822;
+    --color-theme-default: #b6c7d3;
 }
 
 main{
     margin: 0 15%;
+}
+
+body{
+    background-color: #141822;
+    color: #FFF;
+
 }
 
 section{
@@ -46,23 +48,20 @@ header h1{
     padding-top: 2.5rem;
 }
 
+
 header img{
     height: 100px;
     width: 100px;
     float: left;
 }
 
-.image-box{
+main ul{
     display: grid;
     margin-bottom: 1.0rem;
     margin-top: 5.0rem;
     grid-template-columns: repeat(5, 1fr);
     gap: 4;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 7rem;
-    padding: 1rem 80px;
 }
 
 section p{
@@ -87,6 +86,82 @@ footer h2{
     text-align: center;
 }
 
+.image-box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 7rem;
+    padding: 1rem 80px;
+}
+
+fieldset legend{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+fieldset{
+    padding: 1rem;
+    border: solid .1rem var(--color-theme-main);
+    border-radius:1.4rem;
+}
+fieldset form *{
+    display: block;
+    width: 100%;
+    line-height: 3.5rem;
+    border: solid .1rem #FFF;
+    margin-bottom: .5rem;
+}
+fieldset form label, fieldset small{
+    border: 0;
+}
+fieldset small{
+    font-style: italic;
+    color: var(--color-theme-main);
+}
+fieldset form input[placeholder]{
+    font-style: italic;
+       
+}
+/* bordure en style */
+fieldset form input{
+    border: 0;
+    border: solid .1rem transparent;
+    border-bottom-color: rgb(180, 178, 178);
+    width: 99%;
+    opacity: 0.8;
+}
+/* focus animé */
+fieldset form input:focus{
+    border-bottom-color: rgb(119, 117, 117);
+    opacity: 1;
+}
+fieldset form input[placeholder]:focus{
+    outline: 0;
+    box-shadow: 0 0 1rem var(--color-theme-warning);
+    background-color: var(--color-theme-default);   
+}
+
+
+fieldset form input{
+    padding: .5rem;
+}
+
+fieldset form input[type="submit"]{
+    background-color: var(--color-theme-main);
+    color: #DFE3EE;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .01rem;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: initial;
+    border: 0;
+    width: 10%;
+    opacity: 1;
+}
+
 /* Responsive */
 @media screen and (max-width: 40rem) {
 
@@ -100,9 +175,6 @@ footer h2{
         text-align: center;
     }
     
-    .image-box{
-        grid-template-columns: repeat(1, 1fr);
-    }
 
     .images2{
         grid-template-columns: repeat(1, 1fr);
