@@ -133,7 +133,7 @@ fieldset form input{
 }
 /* focus animé */
 fieldset form input:focus{
-    border-bottom-color: rgb(119, 117, 117);
+    border-bottom-color: rgb(47, 148, 243);
     opacity: 1;
 }
 fieldset form input[placeholder]:focus{
