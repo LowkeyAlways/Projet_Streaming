@@ -27,7 +27,7 @@ main{
 }
 
 body{
-    background-image: url("/asset/bckgrnd.jpg");
+    background-image: url("../asset/bckgrnd.jpg") no-repeat fixed center center / cover;
     color: #FFF;
 
 }
