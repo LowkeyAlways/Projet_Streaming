@@ -28,6 +28,7 @@ main{
 
 body{
     background-image: url("/asset/bckgrnd.jpg");
+    background-repeat: no-repeat;
     color: #FFF;
 
 }
@@ -122,6 +123,7 @@ fieldset{
     border: solid .1rem var(--color-theme-main);
     border-radius:1.4rem;
 }
+
 fieldset form *{
     display: block;
     width: 100%;
