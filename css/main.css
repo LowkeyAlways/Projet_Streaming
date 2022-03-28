@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 /* Reset */
 html{ 
     font-size: 62.5%;  
@@ -15,7 +17,7 @@ h1,h2,h3,h4{
     font-weight: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 
 :root{
     --color-theme-main: #171a20b9;
@@ -23,7 +25,7 @@ h1,h2,h3,h4{
 }
 
 body{
-    background-image: url("../asset/bckgrnd.jpg") no-repeat fixed center center / cover;
+    background-image: url("../asset/bckgrnd.jpg");
     font-family: 'Oswald';
     
     color: #FFF;
@@ -60,7 +62,7 @@ header h1{
     text-align: center;
     margin-top: 2rem;
     margin-left: 25%;
-    margin-right: 25%;
+    margin-right: 27%;
     padding: 4rem;
     border-radius: 2rem;
 }
