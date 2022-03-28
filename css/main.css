@@ -43,6 +43,13 @@ section{
     margin-bottom: 100px;
     text-align: center;
 }
+
+div{
+  margin-top: 90px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
 header{
     display: block;
 }
@@ -92,7 +99,7 @@ li img{
 
 
 
-section a{
+div a{
     padding: 2.0rem;
     text-align: center;
     background-color: var(--color-theme-main);
