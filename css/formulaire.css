@@ -27,7 +27,7 @@ main{
 }
 
 body{
-    background-image: url("../asset/bckgrnd.jpg") no-repeat fixed center center / cover;
+    background-image: url("/asset/bckgrnd.jpg") ;
     color: #FFF;
 
 }
@@ -90,19 +90,22 @@ div img{
 
 div a{
     padding: 2.0rem;
+    text-align: center;
     background-color: var(--color-theme-main);
     font-size: larger;
     border-radius: 2rem;
     color: #FFF;
 }
 
+footer{
+    text-align: center;
+}
+
 footer h2{
     background-color: var(--color-theme-main);
-    text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 43%;
-    margin-right: 40%;
+    
     padding: 1rem;
     border-radius: 2rem;
 }

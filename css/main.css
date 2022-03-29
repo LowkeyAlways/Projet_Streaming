@@ -105,9 +105,13 @@ div a{
     padding: 2.0rem;
     text-align: center;
     background-color: var(--color-theme-main);
-    font-size: larger;
+    font-size: x-large;
     border-radius: 2rem;
     color: #FFF;
+}
+
+footer{
+  text-align: center;
 }
 
 footer h2{
@@ -115,10 +119,93 @@ footer h2{
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 43%;
-    margin-right: 40%;
+    
     padding: 1rem;
     border-radius: 2rem;
+}
+
+ul figure{
+  position: relative;
+  border: solid .1rem #fafafa;
+}
+
+ul figure figcaption{
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  align-items: center;
+  transform: scale(0);
+  transition: all 500ms ease-in-out;
+  transform-origin: center center;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+ul figure:hover figcaption{
+  transform: scale(1);
+}
+
+/* modale */
+.parent-modale{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.parent-modale .modale{
+  max-width: 80rem;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+  z-index: 2;
+  cursor: pointer;
+  
+  
+}
+.parent-modale .modale .desc{
+  position: static;
+  transition: none;
+  background-color: #fff;
+  color: #222;
+  
+}
+.modale-active{
+  z-index: 1;
+  opacity: 1;
+  transform-origin: center center;
+}
+.parent-modale .modale .desc h3{
+  font-size: x-large;
+  font-weight: 400;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+}
+.parent-modale .modale .desc p :is(time){
+  padding: 1rem;
+}
+.parent-modale .modale button{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  z-index: 2;
+  color: #333;
+  cursor: pointer;
 }
 
 .grow {
@@ -137,69 +224,6 @@ footer h2{
     transform: scale(1.1);
   }
 
-  @-webkit-keyframes bob {
-    0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
-    }
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  @keyframes bob {
-    0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-    50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
-    }
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  @-webkit-keyframes bob-float {
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  @keyframes bob-float {
-    100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
-    }
-  }
-  .bob {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .bob:hover, .bob:focus, .bob:active {
-    -webkit-animation-name: bob-float, bob;
-    animation-name: bob-float, bob;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
-  }
 
 /* Responsive */
 @media screen and (max-width: 40rem) {
