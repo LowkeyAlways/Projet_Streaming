@@ -233,36 +233,7 @@ ul figure:hover figcaption{
 
 
 /* Responsive */
-@media (min-width: 900px) {
-    
-    main, footer{
-        width: auto;
-        margin: 0;
-    }
-
-    .image-box{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-
-
-    header{
-        display: block;
-        position: static;
-        margin: 0 auto;
-    }
-
-    div{
-        display: grid;
-        column-gap: 20px;
-    }
-
-    main section h2{
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 40rem) {
 
     main, footer{
         width: auto;
@@ -293,4 +264,3 @@ ul figure:hover figcaption{
     }
 
 }
-
