@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       document.querySelector(
         ".modale .desc p"
       ).innerHTML = `<strong>Déscription : </strong>${desc}`;
-      document.querySelector(".modale .desc time").innerText = `Annee: ${dates}`;
+      document.querySelector(".modale .desc time").innerHTML = `<strong>Année: </strong>${dates}`;
       document
         .querySelector(".modale .desc time")
         .setAttribute("datetime", dates);
