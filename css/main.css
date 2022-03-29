@@ -164,6 +164,7 @@ ul figure:hover figcaption{
 }
 .parent-modale .modale{
   max-width: 80rem;
+  max-height: 80rem;
   padding: 1rem;
   position: fixed;
   top: 50%;
@@ -172,12 +173,17 @@ ul figure:hover figcaption{
   background-color: #fff;
   box-shadow: 0 0 1rem rgba(0,0,0,0.6);
   z-index: 2;
-  cursor: pointer;
-  
-  
+  cursor: pointer; 
 }
+
+.parent-modale .modale img{
+  max-width: 30rem;
+}
+
 .parent-modale .modale .desc{
   position: static;
+  max-width: 80rem;
+  max-height: 30rem;
   transition: none;
   background-color: #fff;
   color: #222;
@@ -198,6 +204,7 @@ ul figure:hover figcaption{
 .parent-modale .modale .desc p :is(time){
   padding: 1rem;
 }
+
 .parent-modale .modale button{
   position: absolute;
   top: 1.5rem;
