@@ -277,14 +277,16 @@ fieldset form input[type="submit"]{
         margin: 0;
     }
 
-    section ul{
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-    }
+    
     
 
-    .images2{
+    main ul{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    div img{
+        width: 35rem;
+        height: auto;
     }
 
     header{
