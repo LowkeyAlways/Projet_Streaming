@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 /* Reset */
 html{ 
     font-size: 62.5%;  
@@ -28,8 +30,29 @@ main{
 
 body{
     background-image: url("../asset/bckgrnd.jpg");
+    background-attachment: fixed;
+    background-position: center;    
+    font-family: 'Oswald';
     color: #FFF;
+}
 
+header h1{
+    background-color: var(--color-theme-main);
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+header img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-top: 1rem;
+    padding-left: 3rem;
 }
 
 section{
@@ -42,31 +65,9 @@ div{
     margin-top: 90px;
       margin-bottom: 100px;
       text-align: center;
-  }
-
-header{
-    display: block;
-}
+    }
 
 
-header h1{
-    background-color: var(--color-theme-main);
-    text-align: center;
-    margin-top: 2rem;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 4rem;
-    border-radius: 2rem;
-}
-
-
-header img{
-    height: 100px;
-    width: 100px;
-    float: left;
-    padding-top: 1rem;
-    padding-left: 3rem;
-}
 
 main ul{
     display: grid;
@@ -140,6 +141,12 @@ fieldset form *{
     border: solid .1rem #FFF;
     margin-bottom: .5rem;
 }
+
+fieldset form label{
+    padding-top: 3rem;
+    font-size: large;
+}
+
 fieldset form label, fieldset small{
     border: 0;
 }
@@ -185,7 +192,7 @@ fieldset form input[type="submit"]{
     margin-top: 1.5rem;
     font-size: initial;
     border: 0;
-    width: 10%;
+    width: 25%;
     opacity: 1;
 }
 
@@ -277,9 +284,6 @@ fieldset form input[type="submit"]{
         margin: 0;
     }
 
-    
-    
-
     main ul{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -289,10 +293,16 @@ fieldset form input[type="submit"]{
         height: auto;
     }
 
+    header img{
+        position: relative;    
+    }
+
+    header h1{
+        margin: 2rem;
+      }
+
     header{
-        display: block;
-        position: static;
-        margin: 0 auto;
+        display: grid;
     }
 
     div{
@@ -304,14 +314,4 @@ fieldset form input[type="submit"]{
         margin: 0;
     }
 
-}
-@media screen and (orientation: landscape){
-    nav ul{
-        margin: 0 auto 2rem;
-       
-    }
-    nav ul li{
-        width: calc(100% / 5);
-    }
-    
 }

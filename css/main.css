@@ -26,13 +26,29 @@ h1,h2,h3,h4{
 
 body{
     background-image: url("../asset/bckgrnd.jpg");
+    background-attachment: fixed;
+    background-position: center;    
     font-family: 'Oswald';
-    
     color: #FFF;
-
 }
 
+header h1{
+  background-color: var(--color-theme-main);
+  margin-left: 40rem;
+  margin-right: 40rem;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 4rem;
+  border-radius: 2rem;
+}
 
+header img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
 
 main{
     margin: 0 5%;
@@ -52,27 +68,8 @@ div{
     text-align: center;
 }
 
-header{
-    display: block;
-}
-
-
-header h1{
-    background-color: var(--color-theme-main);
-    text-align: center;
-    margin-top: 2rem;
-    margin-left: 25%;
-    margin-right: 27%;
-    padding: 4rem;
-    border-radius: 2rem;
-}
-
-header img{
-    height: 100px;
-    width: 100px;
-    float: left;
-    padding-top: 1rem;
-    padding-left: 3rem;
+.btn-0{
+  font-size: 3rem;
 }
 
 .image-box{
@@ -248,12 +245,13 @@ ul figure:hover figcaption{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
+    header img{
+      position: relative;
+      
+    }
 
-    header{
-        display: block;
-        position: static;
-        margin: 0 auto;
+    header h1{
+      margin: 2rem;
     }
 
     div{
