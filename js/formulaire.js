@@ -22,34 +22,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
         } else {
             alert('Formulaire envoyé !');
         }
-
-        // var nom = document.getElementById("nom");
-        // var prenom = document.getElementById("prenom");
-        // var email = document.getElementById("email");
-        // var pays = document.getElementById("pays");
-        // var ville = document.getElementById("ville");
-
-        
-        
-        
-        
-        // if (!ville.value){
-        //     erreur = "Veuillez renseigner une ville";
-        // }
-        // if (!pays.value){
-        //     erreur = "Veuillez renseigner un pays";
-        // }
-        // if (!email.value){
-        //     erreur = "Veuillez renseigner un email";
-        // }
-        // if (!prenom.value){
-        //     erreur = "Veuillez renseigner un prénom";
-        // }
-        // if (!nom.value){
-        //     erreur = "Veuillez renseigner un nom";
-        // }
-
-        
-
     });
 });
