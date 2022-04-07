@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
         for (var i = 0; i < inputs.length; i++) {
             if (!inputs[i].value) {
-                erreur = "Veuillez renseigner tous les champs";
+                erreur = "Tous les champs ne sont pas remplis !";
                 break
             }
         }
 
         if (erreur) {
-            e.preventDefault();
-            document.getElementById("erreur").innerHTML = erreur;
+            e.preventDefault()
+            alert('Tous les champs ne sont pas remplis !');
             return false;
         } else {
             alert('Formulaire envoyé !');
