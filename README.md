@@ -16,4 +16,5 @@
 * css/main.css
 * css/formulaire.css
 * asset/
+* favicon/
 * js/
