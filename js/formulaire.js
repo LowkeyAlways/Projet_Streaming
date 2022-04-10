@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (e) => {
     var submit = document.getElementById("inscription");
     
-    submit.addEventListener("submit", function() {
+    submit.addEventListener("submit", function(e) {
         e.preventDefault();
 
         var erreur
