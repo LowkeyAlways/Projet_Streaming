@@ -231,31 +231,21 @@ ul figure:hover figcaption{
 /* Responsive */
 @media screen and (max-width: 40rem) {
 
-    main, footer{
+    body{ 
         width: auto;
-        margin: 0;
+        margin: 0; /* Pour supprimer les espaces qui sont inadaptés sur petit écran */
     }
     
     .image-box{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Colonnes plus adaptés sur petit écran */
     }
 
     header img{
-      position: relative;
-      
+      position: relative; /* l'élément est positionné dans le flux normal du document */
     }
 
     header h1{
       margin: 2rem;
-    }
-
-    div{
-        display: grid;
-        column-gap: 20px;
-    }
-
-    main section h2{
-        margin: 0;
     }
 
 }

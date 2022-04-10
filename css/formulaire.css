@@ -275,39 +275,26 @@ fieldset form input[type="submit"]{
 /* Responsive */
 @media screen and (max-width: 40rem) {
 
-    main, footer{
+    main{
         width: auto;
-        margin: 0;
+        margin: 0;  /* Pour supprimer les espaces qui sont inadaptés sur petit écran */
     }
 
     main ul{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* Colonnes plus adaptés sur petit écran */
     }
 
     div img{
-        width: 35rem;
+        width: 35rem; /* taille adapté pour petit écran */
         height: auto;
     }
 
     header img{
-        position: relative;    
+        position: relative; /* l'élément est positionné dans le flux normal du document */
     }
 
     header h1{
         margin: 2rem;
       }
-
-    header{
-        display: grid;
-    }
-
-    div{
-        display: grid;
-        column-gap: 20px;
-    }
-
-    main section h2{
-        margin: 0;
-    }
-
+      
 }
