@@ -1,31 +1,5 @@
 document.addEventListener("DOMContentLoaded", (e) => {
-    var submit = document.getElementById("inscription");
     
-    submit.addEventListener("submit", function(e) {
-        
-
-        var erreur
-
-        var inputs = document.getElementsByTagName("input");
-
-        for (var i = 0; i < inputs.length; i++) {
-            if (!inputs[i].value) {
-                erreur = "Tous les champs ne sont pas remplis !";
-                break
-            }
-        }
-
-        if (erreur) {
-            e.preventDefault()
-            alert('Tous les champs ne sont pas remplis !');
-            return false;
-        } else {
-            alert('Formulaire envoyé !');
-        }
-
-        
-
-    });
     const formulaire = {
         last_name : document.getElementsByName("nom")[0],
         first_name : document.getElementsByName("prenom")[0],
@@ -56,4 +30,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
         e.preventDefault();
         formulaire.send();
     });
+
 });
