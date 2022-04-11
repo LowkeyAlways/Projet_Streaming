@@ -92,6 +92,7 @@ li img{
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
+    
 }
 
 div a{
@@ -250,5 +251,5 @@ ul figure:hover figcaption{
     header h1{
       margin: 2rem;
     }
-    
+
 }

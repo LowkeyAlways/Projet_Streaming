@@ -2,7 +2,7 @@
 
 /* Reset */
 html{ 
-    font-size: 62.5%;  
+    font-size: 62.2%;  
 }
 body{
     font: 1.6rem sans-serif; 
@@ -52,6 +52,7 @@ header img{
     width: 100px;
     padding-top: 1rem;
     padding-left: 3rem;
+    
 }
 
 section{
@@ -83,6 +84,7 @@ div img{
     height: 100%;
     object-fit: cover; /* définit la façon dont le contenu d'un élément remplacé doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur */
     border-radius: 1rem;
+    box-shadow: .2rem .2rem .2rem .2rem var(--color-theme-main);
 }
 
 div a{
@@ -117,7 +119,7 @@ footer h2{
 
 fieldset legend{
     background-color: var(--color-theme-main);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 1rem;
     border-radius:1.4rem;
 }
@@ -132,9 +134,9 @@ fieldset{
 fieldset form *{
     display: block;
     width: 100%;
-    line-height: 3.5rem;
+    line-height: 3.2rem;
     border: solid .1rem #FFF;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
 }
 
 fieldset form label{
@@ -173,7 +175,7 @@ fieldset form input[placeholder]:focus{
 
 
 fieldset form input{
-    padding: .5rem;
+    padding: .2rem;
 }
 
 fieldset form input[type="submit"]{
@@ -184,7 +186,7 @@ fieldset form input[type="submit"]{
     letter-spacing: .01rem;
     cursor: pointer;
     margin: 0;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     font-size: initial;
     border: 0;
     width: 25%;
@@ -259,8 +261,8 @@ fieldset form input[type="submit"]{
   .bob:hover, .bob:focus, .bob:active {
     -webkit-animation-name: bob-float, bob;
     animation-name: bob-float, bob;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
+    -webkit-animation-duration: .3s, 1.2s;
+    animation-duration: .3s, 1.2s;
     -webkit-animation-delay: 0s, .3s;
     animation-delay: 0s, .3s;
     -webkit-animation-timing-function: ease-out, ease-in-out;
