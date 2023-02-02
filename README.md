@@ -6,7 +6,7 @@
 ### Un site ou vous pouvez trouver tous les films et séries en streaming.
 ### Il vous suffit de remplir le formulaire pour avoir accès à tous ces films et séries.
 ---------------
-[Afficher le site](https://andyl94.github.io/Projet_Streaming/)
+[Afficher le site](https://lowkeyalways.github.io/Projet_Streaming/)
 ---------------
 # Charte Graphique
 ![Palette](asset/Palette.png)
