@@ -160,7 +160,8 @@ fieldset form input{
     border: 0;
     border: solid .1rem transparent;
     border-bottom-color: rgb(180, 178, 178);
-    width: 99%;
+    width: 85%;
+    margin: auto;
 }
 /* focus animé */
 fieldset form input:focus{
